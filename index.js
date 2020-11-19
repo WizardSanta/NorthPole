@@ -29,7 +29,7 @@ const navSlide = () => {
 
 	navLinks.forEach((link, index) => {
 		link.addEventListener('click', () => {
-			var file = link.textContent.replaceAll(" ", "") + ".html";
+			var file = link.textContent.replaceAll(" ", "").toLowerCase() + ".html";
 			fetchPage(file);
 		})
 	})
